@@ -1,0 +1,2 @@
+C:\Users\Lenovo\Desktop\D365-Dev\MyFirstPCF\obj\PowerAppsToolsTemp_scm\obj\Debug\PowerAppsToolsTemp_scm.cdsproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\D365-Dev\MyFirstPCF\obj\PowerAppsToolsTemp_scm\obj\Debug\PowerAppsToolsTemp_scm.cdsproj.CoreCompileInputs.cache

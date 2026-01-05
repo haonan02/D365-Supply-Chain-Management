@@ -1,0 +1,2 @@
+pac pcf init --namespace SCM --name StockSlider --template field
+node_modules

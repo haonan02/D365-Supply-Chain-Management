@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gxfpuANca6o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\D365-Dev\\MyFirstPCF\\MyFirstPCF.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net462\\1.0.0\\microsoft.netframework.referenceassemblies.net462.1.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.51.1\\microsoft.powerapps.msbuild.pcf.1.51.1.nupkg.sha512"
+  ],
+  "logs": []
+}
