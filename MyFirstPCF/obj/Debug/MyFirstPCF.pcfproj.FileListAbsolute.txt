@@ -1,2 +1,0 @@
-C:\Users\Lenovo\Desktop\D365-Dev\MyFirstPCF\obj\Debug\MyFirstPCF.pcfproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\D365-Dev\MyFirstPCF\obj\Debug\MyFirstPCF.pcfproj.CoreCompileInputs.cache
