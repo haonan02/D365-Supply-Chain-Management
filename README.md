@@ -52,8 +52,9 @@ The backend logic is decoupled using the **Service-Repository Pattern** to ensur
 ```text
 D365-Dev/
 ├── solutions/           # Unmanaged solution zip files for deployment
-├── src/                 
+├── docs/                
 │   ├── SCM.Plugins/     # C# Plugin library (Visual Studio Solution)
 │   ├── MyFirstPCF/      # Power Apps Component Framework source code
 │   └── WebResources/    # JavaScript files for form logic
-└── docs/                # Architecture diagrams and screenshots
+└── src/                 # Architecture diagrams and screenshots
+
