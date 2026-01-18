@@ -1,0 +1,36 @@
+name: Build C# Plugins (CI)
+
+# 1. 触发规则：当推送到 main 分支时，且 src/SCM.Plugins 文件夹有变动时触发
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'src/SCM.Plugins/**'
+
+# 2. 任务定义
+jobs:
+  build:
+    name: Build Solution
+    runs-on: windows-latest  # 使用 GitHub 提供的 Windows 服务器
+
+    steps:
+    # 第一步：把代码拉取下来
+    - uses: actions/checkout@v3
+
+    # 第二步：安装 MSBuild 编译器
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    # 第三步：安装 NuGet 包管理器
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0
+      
+    # 第四步：下载依赖包 (Restore)
+    # 注意：这里假设你的 .sln 文件路径是 src/SCM.Plugins/SCM.Plugins.sln
+    # 如果路径不对，构建会失败
+    - name: Restore NuGet Packages
+      run: nuget restore src/SCM.Plugins/SCM.Plugins.sln
+
+    # 第五步：正式编译 (Build)
+    - name: Build Solution
+      run: msbuild src/SCM.Plugins/SCM.Plugins.sln /p:Configuration=Release /p:DeployOnBuild=true
