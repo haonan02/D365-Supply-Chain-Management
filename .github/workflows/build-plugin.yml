@@ -29,8 +29,8 @@ jobs:
     # 注意：这里假设你的 .sln 文件路径是 src/SCM.Plugins/SCM.Plugins.sln
     # 如果路径不对，构建会失败
     - name: Restore NuGet Packages
-      run:  nuget restore src/SCM.Plugins/SCM.Plugins/SCM.Plugins.sln
+      run: nuget restore src/SCM.Plugins/SCM.Plugins.sln
 
     # 第五步：正式编译 (Build)
     - name: Build Solution
-      run: msbuild src/SCM.Plugins/SCM.Plugins/SCM.Plugins.sln /p:Configuration=Release /p:DeployOnBuild=true
+      run: msbuild src/SCM.Plugins/SCM.Plugins.sln /p:Configuration=Release /p:DeployOnBuild=true
