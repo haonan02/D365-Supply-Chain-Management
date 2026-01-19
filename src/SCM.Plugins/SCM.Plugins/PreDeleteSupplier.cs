@@ -49,7 +49,7 @@ namespace SCM.Plugins
                         // 如果查到了产品，说明有关联数据，禁止删除！
                         throw new InvalidPluginExecutionException($"🛑 拦截：该供应商名下仍有 {results.Entities.Count} 个关联产品，无法删除！请先清空产品。");
                     }
-
+// Day 42 CI Test Web Trigger
                 }
                 catch (InvalidPluginExecutionException)
                 {
@@ -61,8 +61,9 @@ namespace SCM.Plugins
                 }
             }
         }
-        // Day 42 CI Test Web Trigger
+        
     }
 
 }
+
 
